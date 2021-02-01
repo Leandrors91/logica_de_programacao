@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="sistemaEscola"/>
+        <attribute name="authors" value="Leandro"/>
+        <attribute name="about" value="verifica condi&#231;&#227;o de aprova&#231;&#227;o de um aluno e escreve resultado"/>
+        <attribute name="saved" value="2021-02-01 03:59:58 "/>
+        <attribute name="created" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjAtMTEtMjA7IjEyOjE3OjQ3ICI7MjYwMw=="/>
+        <attribute name="edited" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjEtMDItMDE7IjAzOjU5OjU4ICI7MjsyNzIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, media" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <input variable="n4"/>
+            <assign variable="media" expression="(n1+n2+n3+n4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Aluno aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

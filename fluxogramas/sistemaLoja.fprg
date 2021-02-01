@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="sistemaEscola"/>
+        <attribute name="authors" value="Leandro"/>
+        <attribute name="about" value="verifica condi&#231;&#227;o para permitir a compra na loja"/>
+        <attribute name="saved" value="2021-02-01 04:03:44 "/>
+        <attribute name="created" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjAtMTEtMjA7IjEyOjExOjI4ICI7MjU5Ng=="/>
+        <attribute name="edited" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjEtMDItMDE7IjA0OjAzOjQ0ICI7MjsyNzA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="codigo" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <input variable="cartao"/>
+            <if expression="cartao">
+                <then>
+                    <input variable="codigo"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#201; preciso ter um cart&#227;o de c&#233;dito para fazer a compra&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

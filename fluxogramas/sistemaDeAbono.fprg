@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value="sistemaDeAbono"/>
+        <attribute name="authors" value="Leandro"/>
+        <attribute name="about" value="sistema que calcula e escreve o abono de um funcion&#225;rio"/>
+        <attribute name="saved" value="2021-02-01 04:15:54 "/>
+        <attribute name="created" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjAtMTEtMjA7IjEyOjI0OjMyICI7MjU5NQ=="/>
+        <attribute name="edited" value="TGVhbmRybztMRUFORFJPLVBDOzIwMjEtMDItMDE7IjA0OjE1OjU0ICI7MzsyNzEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Escreva os valores atingidos nos meses de janeiro, fevereiro, mar&#231;o e abril: &quot;" newline="True"/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns voc&#234; vai receber um abono de 10%!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; vai receber um abono de 3%!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
